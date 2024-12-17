@@ -1,6 +1,6 @@
 document.getElementById('pay-button').onclick = async function () {
     // Fetch the order ID from the server
-    const response = await fetch('http://34.229.149.63:8000/create-order', { method: 'POST' });
+    const response = await fetch('http://api.saeragolfcart.in:8000/create-order', { method: 'POST' });
     const data = await response.json();
   
     if (!data.orderId) {
